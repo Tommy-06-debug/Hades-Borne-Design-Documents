@@ -1,0 +1,1 @@
+-Estructurar las variables haciendo que pasen por una función, de tal forma que se puedan aplicar estados alterados en ellas (multiplicar, restar, settear, velocidad fricción y aceleración)

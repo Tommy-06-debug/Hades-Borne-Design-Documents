@@ -1,5 +1,5 @@
 
-- Estado dodge
+- Documentar estado dodge
 - Estado attack, logica de ataque y dummy para comprobar el funcionamiento
   y tener la logica hurtbox ya medio funcional.
   > [!note]- Nota sobre el tipodo de daño

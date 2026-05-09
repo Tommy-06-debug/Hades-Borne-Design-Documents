@@ -23,6 +23,7 @@
 - **Sistema de Postura (Estilo Sekiro adaptado):** Los enemigos tienen una barra invisible de equilibrio. Se desgasta con ataques melee y parries perfectos.
     
 - **Interfaz Dielgética:** El estado Stunned (postura rota) se representa visualmente con patitos amarillos girando sobre la cabeza del enemigo. No hay barras de estado flotantes que ensucien la pantalla.
+  El enemigo marcado tiene un circulo en los pies que lo marca.
     
 - **Salud Segmentada:** 9 Vidas (estilo Hollow Knight). Cada golpe recibido resta una unidad entera, sin matemáticas ocultas de mitigación de daño.
     
@@ -40,14 +41,14 @@
 
 Todas las acciones de combate y evasión están mapeadas en los gatillos/bumpers. Los pulgares nunca deben abandonar los sticks analógicos.
 
-| Input                 | Acción Principal     | Función Técnica                                                                                                                    |
-| --------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Stick Izquierdo**   | Movimiento           | Desplazamiento del personaje.                                                                                                      |
-| **Stick Derecho**     | Fijación de enemigos | Fija un enemigo o cambia el enemigo fijado.                                                                                        |
-| **R2 (Gatillo Der.)** | Disparo a distancia  | Gasto de recurso / Daño a salud.                                                                                                   |
-| **R1 (Bumper Der.)**  | Ataque Melee         | Generación de recurso / Daño a postura.                                                                                            |
-| **L2 (Gatillo Izq.)** | Dash / Esquiva       | Un solo botón dedicado de pulsación única para evitar Input Lag. Otorga frames de invulnerabilidad y reposicionamiento.            |
-| **L1 (Bumper Izq.)**  | Parry                | Acción estática de alto riesgo/alta recompensa para quebrar drásticamente la postura enemiga si se ejecuta con el timing perfecto. |
+| Input                 | Acción Principal                | Función Técnica                                                                                                                                           |
+| --------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stick Izquierdo**   | Movimiento                      | Desplazamiento del personaje.                                                                                                                             |
+| **Stick Derecho**     | Fijación de enemigos (softlock) | Fija un enemigo o cambia el enemigo fijado, de tal forma que el player no se gira hacia el enemigo pero en el caso de atacar el ataquese dirige hacia el. |
+| **R2 (Gatillo Der.)** | Disparo a distancia             | Gasto de recurso / Daño a salud.                                                                                                                          |
+| **R1 (Bumper Der.)**  | Ataque Melee                    | Generación de recurso / Daño a postura.                                                                                                                   |
+| **L2 (Gatillo Izq.)** | Dash / Esquiva                  | Un solo botón dedicado de pulsación única para evitar Input Lag. Otorga frames de invulnerabilidad y reposicionamiento.                                   |
+| **L1 (Bumper Izq.)**  | Parry                           | Acción estática de alto riesgo/alta recompensa para quebrar drásticamente la postura enemiga si se ejecuta con el timing perfecto.                        |
 
 ## ⚙️ 4. Sistemas de Personaje (FSM)
 
@@ -103,28 +104,6 @@ El jugador se rige por transiciones lógicas estrictas para asegurar que los con
 > - **Lógica:** No anula los inputs del jugador. Resta -1 a la variable de Vidas. Desencadena un Hitstop global, aplica fuerza de Knockback y activa invulnerabilidad por 1.5 segundos con parpadeo.
 >     
 > - **Salidas:** Se resuelve casi instantáneamente volviendo al estado de control presionado.
->     
-
-## 🗺️ 5. Estructura de Progresión y Niveles
-
-- **El Tablero de Encargos:** Menú central (Hub) donde se seleccionan las misiones. Sin mundo abierto; la transición a la acción es directa y arcade.
-    
-- **Diseño de Mapas:** 9 mapas totales diseñados a mano (3 por facción).
-    
-    - _1 Estrella:_ Introducción de mecánica/enemigos de facción.
-        
-    - _2 Estrellas:_ Desarrollo y combinaciones difíciles.
-        
-    - _3 Estrellas:_ Enfrentamiento con el Jefe de Facción.
-        
-
-> [!quote]- Facciones
-> 
-> - **Facción A:** Especializada en combate cerrado y agresivo (fomenta el uso del Parry).
->     
-> - **Facción B:** Especializada en control de zonas y proyectiles (fomenta el uso constante del Dash).
->     
-> - **Facción C:** Especializada en emboscadas masivas (fomenta el control de masas y economía de balas).
 >     
 
 ## 🔫 6. Arsenal (Matriz Ortogonal)

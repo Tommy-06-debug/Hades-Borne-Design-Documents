@@ -2,7 +2,7 @@
 
 > [!summary]- 1. Visión General
 > 
-> - **Género:** Twin-Stick Shooter / Action-RPG ligero (inspiración Soulslike).
+> - **Género:** Action-RPG ligero (inspiración Soulslike).
 >     
 > - **Cámara:** Cenital (Top-Down) o isometrico.
 >     
@@ -36,18 +36,18 @@
 > - **Bonificador por Ejecución (Stun Multiplier):** Al impactar a un enemigo en estado Stunned, el daño aumenta un +150%. Esto incentiva el uso de armas de fuego como herramientas de finalización.
 >     
 
-## 🎮 3. Esquema de Controles (El Paradigma del Twin-Stick)
+## 🎮 3. Esquema de Controles
 
-Para mantener el flujo del combate y evitar el "Síndrome del pulgar atascado", todas las acciones de combate y evasión están mapeadas en los gatillos/bumpers. Los pulgares nunca deben abandonar los sticks analógicos.
+Todas las acciones de combate y evasión están mapeadas en los gatillos/bumpers. Los pulgares nunca deben abandonar los sticks analógicos.
 
-| Input                 | Acción Principal    | Función Técnica                                                                                                                    |
-| --------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Stick Izquierdo**   | Movimiento          | Desplazamiento del personaje.                                                                                                      |
-| **Stick Derecho**     | Apuntado 360°       | Dirección tanto para disparos como para ataques cuerpo a cuerpo.                                                                   |
-| **R2 (Gatillo Der.)** | Disparo a distancia | Gasto de recurso / Daño a salud.                                                                                                   |
-| **R1 (Bumper Der.)**  | Ataque Melee        | Generación de recurso / Daño a postura.                                                                                            |
-| **L2 (Gatillo Izq.)** | Dash / Esquiva      | Un solo botón dedicado de pulsación única para evitar Input Lag. Otorga frames de invulnerabilidad y reposicionamiento.            |
-| **L1 (Bumper Izq.)**  | Parry               | Acción estática de alto riesgo/alta recompensa para quebrar drásticamente la postura enemiga si se ejecuta con el timing perfecto. |
+| Input                 | Acción Principal     | Función Técnica                                                                                                                    |
+| --------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Stick Izquierdo**   | Movimiento           | Desplazamiento del personaje.                                                                                                      |
+| **Stick Derecho**     | Fijación de enemigos | Fija un enemigo o cambia el enemigo fijado.                                                                                        |
+| **R2 (Gatillo Der.)** | Disparo a distancia  | Gasto de recurso / Daño a salud.                                                                                                   |
+| **R1 (Bumper Der.)**  | Ataque Melee         | Generación de recurso / Daño a postura.                                                                                            |
+| **L2 (Gatillo Izq.)** | Dash / Esquiva       | Un solo botón dedicado de pulsación única para evitar Input Lag. Otorga frames de invulnerabilidad y reposicionamiento.            |
+| **L1 (Bumper Izq.)**  | Parry                | Acción estática de alto riesgo/alta recompensa para quebrar drásticamente la postura enemiga si se ejecuta con el timing perfecto. |
 
 ## ⚙️ 4. Sistemas de Personaje (FSM)
 
@@ -82,7 +82,7 @@ El jugador se rige por transiciones lógicas estrictas para asegurar que los con
 > 
 > - **Condición de entrada:** Pulsación única del Gatillo R2 (Semi-automático, no mantener) Y munición actual > 0.
 >     
-> - **Lógica:** El movimiento de las piernas sigue activo (Move en paralelo), pero la velocidad general se reduce un 10% durante la animación de disparo para dar peso mecánico. El torso se orienta hacia el vector del Stick Derecho e instancia un único proyectil rápido. Ejecuta evento: Consume_Ammo() y aplica un recoil visual y físico. Si el proyectil impacta, ejecuta evento: Damage_Health() (escala masivamente si el objetivo tiene la postura rota).
+> - **Lógica:** El movimiento de las piernas sigue activo (Move en paralelo), pero la velocidad general se reduce un 10% durante la animación de disparo para dar peso mecánico. El torso se orienta hacia el enemigo fijado e instancia un único proyectil rápido. Ejecuta evento: Consume_Ammo() y aplica un recoil visual y físico. Si el proyectil impacta, ejecuta evento: Damage_Health() (escala masivamente si el objetivo tiene la postura rota).
 >     
 > - **Salidas:** Requiere que finalice la recuperación del arma antes de transicionar a Idle/Move. Puede ser cancelado de emergencia por un Dash.
 >     

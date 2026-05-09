@@ -112,20 +112,20 @@ El juego cuenta con un total de 6 armas base:
 
 ### 🗡️ Armas Cuerpo a Cuerpo
 
-> [!quote]- 1. Navaja Mariposa / Puño Americano (Arma Base)
+> [!quote]- 1. #Navaja Mariposa (Arma Base)
 > 
 > - **Función:** Combate sostenido y seguridad táctica.
 >     
 > - **Input:** Pulsaciones consecutivas de R1 (Combo de hasta 3 golpes).
 >     
-> - **Ejecución:** El jugador conserva el 60% de velocidad. Hitbox en cono corto y estrecho. Daño de postura moderado por golpe.
+> - **Ejecución:** El jugador conserva el 60% de velocidad. Hitbox en cono corto y estrecho. Daño de postura moderado por golpe. 
 >     
 > - **Economía:** Solo el tercer golpe recarga munición, obligando a mantener la presión.
 >     
 > - **Riesgo:** Muy bajo. Frames de recuperación mínimos, cancelable con Dash casi siempre.
 >     
 
-> [!quote]- 2. Katana Yakuza (Embestida Ofensiva)
+> [!quote]- 2. #Katana Yakuza (Embestida Ofensiva)
 > 
 > - **Función:** Reposicionamiento rápido y cazar retaguardia.
 >     
@@ -138,7 +138,7 @@ El juego cuenta con un total de 6 armas base:
 > - **Riesgo:** Altísimo. No puede cancelarse con Dash durante el trayecto ni en el envainado.
 >     
 
-> [!quote]- 3. Bate de Béisbol (Control de Masas)
+> [!quote]- 3. #Bate de Béisbol (Control de Masas)
 > 
 > - **Función:** Botón de pánico táctico para despejar zonas.
 >     
@@ -153,7 +153,7 @@ El juego cuenta con un total de 6 armas base:
 
 ### 🎯 Armas a Distancia
 
-> [!quote]- 1. Revólver (Arma Base)
+> [!quote]- 1. #Revólver (Arma Base)
 > 
 > - **Capacidad:** 6 cargas.
 >     
@@ -164,7 +164,7 @@ El juego cuenta con un total de 6 armas base:
 > - **Cooldown/Riesgo:** Recuperación corta (ej. 0.3 seg). Cancelable por Dash en cualquier momento del cooldown.
 >     
 
-> [!quote]- 2. Escopeta (Arma de Riesgo)
+> [!quote]- 2. #Escopeta (Arma de Riesgo)
 > 
 > - **Capacidad:** 2 a 3 cargas.
 >     
@@ -175,7 +175,7 @@ El juego cuenta con un total de 6 armas base:
 > - **Cooldown/Riesgo:** Animación de bombeo obligatoria (ej. 0.8 seg) donde la velocidad baja al 50%. Si se cancela con Dash, el arma no estará lista para disparar.
 >     
 
-> [!quote]- 3. Fusil de Precisión (Rango Largo)
+> [!quote]- 3. #Fusil de Precisión (Rango Largo)
 > 
 > - **Capacidad:** 1 o 2 cargas máximas.
 >     

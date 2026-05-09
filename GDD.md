@@ -20,21 +20,21 @@
 > - **Fase de Ejecución (Distancia):** Al agotar la postura enemiga, este entra en estado Stunned. El jugador usa un dash para ganar distancia segura y descarga su munición (obtenida en la fase 1) para infligir daño masivo a la salud real del enemigo. Las balas son ineficaces contra enemigos con la postura intacta.
 >     
 
-- **Sistema de Postura (Estilo Sekiro adaptado):** Los enemigos tienen una barra invisible de equilibrio. Se desgasta con ataques melee y parries perfectos.
-    
-- **Interfaz Dielgética:** El estado Stunned (postura rota) se representa visualmente con patitos amarillos girando sobre la cabeza del enemigo. No hay barras de estado flotantes que ensucien la pantalla.
-  El enemigo marcado tiene un circulo en los pies que lo marca.
+- **Sistema de #Postura:** Los enemigos tienen una barra invisible de equilibrio. Se desgasta con ataques melee y parries perfectos.
     
 - **Salud Segmentada:** 9 Vidas (estilo Hollow Knight). Cada golpe recibido resta una unidad entera, sin matemáticas ocultas de mitigación de daño.
     
-- **Letalidad:** Sin barras de vida para enemigos comunes; el jugador debe aprender el ritmo y la cantidad de balas/golpes necesarios para matar. Las barras de vida aplican solo para Jefes.
+- **Attack #SoftLock:** Una cámara que une el frenetismo de un twin-stick  junto a la precisión que requiere un Souls. Permite al jugador correr por el escenario con una cámara libre pero pudiendo fijar un enemigo, de tal forma que al atacar, el personaje rota hacia el enemigo y lo golpea o dispara en su dirección.
     
+- **Interfaz Dielgética:** El estado Stunned (postura rota) se representa visualmente con patitos amarillos girando sobre la cabeza del enemigo. No hay barras de estado flotantes que ensucien la pantalla. El enemigo marcado tiene un circulo en los pies que lo marca.
+    
+- **Letalidad:** Sin barras de vida para enemigos comunes; el jugador debe aprender el ritmo y la cantidad de balas/golpes necesarios para matar. Las barras de vida aplican solo para Jefes.
 
 > [!info]- Sistema de Letalidad Progresiva
 > 
 > - **Daño Base (Ranged):** Las armas a distancia infligen un daño mínimo (aprox. 20-30%) a enemigos con la barra de postura activa. Útil para control de masas débiles.
 >     
-> - **Bonificador por Ejecución (Stun Multiplier):** Al impactar a un enemigo en estado Stunned, el daño aumenta un +150%. Esto incentiva el uso de armas de fuego como herramientas de finalización.
+> - **Bonificador por Ejecución (Stun Multiplier):** Al impactar a un enemigo en estado #Stunned, el daño aumenta un +150%. Esto incentiva el uso de armas de fuego como herramientas de finalización.
 >     
 
 ## 🎮 3. Esquema de Controles
@@ -184,4 +184,10 @@ El juego cuenta con un total de 6 armas base:
 > - **Ejecución:** Velocidad de movimiento a 0 al apuntar. El personaje se ancla. Proyectil Hitscan con Pierce_Count infinito. Daño 100% al primero, 20% a los subsiguientes.
 >     
 > - **Cooldown/Riesgo:** Animación larga y pesada (ej. 1.2 seg). SÍ puede cancelarse con Dash para sobrevivir, pero pierde la bala cargada.
->
+
+## 7. Enemigos
+
+>[!info]- Enemigo genérico:
+>Si bien aún no hay enemigos definidos, está claro que la mayoría de ellos debería tener estas características:
+>- **Sistema de #Postura:** El enemigo al ser atacado pierde postura (o suma si hablamos desde el código), al perder toda su postura, entra en el estado #Stunned.
+>- **Estado #Stunned:** El enemigo queda totalmente inhabilitado por unos segundos o fracciones de segundo. mientras se encuentra en este estado el daño que le apliquen aumenta muchas veces el daño base.

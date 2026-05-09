@@ -1,10 +1,10 @@
 # 1. Lógica de ataque :
 
-- Maniquí con hitbox
-- Damage Log en un canvas
-- Ataque melee
-- Ataque a distancia
-- Attack softlock
+- ✅Maniquí con hitbox
+- [[GDD#7. Enemigos]] Lógica de #Postura y #Stunned
+- Ataque melee ( #Navaja )
+- Ataque a distancia ( #Revólver )
+- Attack #SoftLock
 
 # 2. Enemigo simple :
 

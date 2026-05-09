@@ -8,7 +8,7 @@
 
 # 2. Enemigo simple :
 
-- Hitbox y hurtbox
+- Hurtbox
 - Simple pathfinding
 - Ataque melee simple
 

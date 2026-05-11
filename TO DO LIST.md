@@ -2,9 +2,10 @@
 
 - ✔️Maniquí con hitbox
 - 〰️Animaciones y efectos
-- Ataque melee ( #Navaja )
+- ✔️Ataque melee (genérico)
 - Attack #SoftLock
 - [[GDD#7. Enemigos]] Lógica de #Postura y #Stunned
+- Ataque melee ( #Navaja )
 - Ataque a distancia ( #Revólver )
 
 # 2. Enemigo simple :

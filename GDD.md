@@ -2,9 +2,9 @@
 
 > [!summary]- 1. Visión General
 > 
-> - **Género:** Action-RPG ligero (inspiración Soulslike).
+> - **Género:** Twin-stick táctico con elementos Souls.
 >     
-> - **Cámara:** Cenital (Top-Down) o isometrico.
+> - **Cámara:** Cenital (Top-Down) o isométrico.
 >     
 > - **Estética:** Estilizada y "Cozy" (vibras Cult of the Lamb / Tunic). Fuerte contraste entre lo tierno del mundo (gatos, patitos) y la brutalidad mecánica del combate.
 >     
